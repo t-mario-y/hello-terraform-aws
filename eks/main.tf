@@ -1,10 +1,8 @@
 # AWS EKS demo
 provider "aws" {
-  profile = var.aws_profile
+  profile = "default"
   region  = "ap-northeast-1"
 }
-
-variable "aws_profile" {}
 
 # Cluster Name Variable
 variable "cluster-name" {
